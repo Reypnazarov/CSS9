@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    & i{
+        display: none;
+        font-size: 2rem;
+    }
+    &__menu{
+        display: flex;
+        background-color: bisque;
+        width: 100%;
+        margin: auto;
+        padding: 30px 10%;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        & h1{
+            font-size: 2rem;
+            font-weight: 900;
+            color: darkblue;
+            & span{
+                color: blue;
+            }
+        }
+        & ul{
+            display: flex;
+            gap: 15px;
+            font-weight: bolder;
+            transition: color 0.2s ease;
+            & li a:hover{
+                color: orange;
+            }
+        }
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+        padding: 50px 10%;
+    }
+}
+.images{
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & span{
+            color: burlywood;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        & h1{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        & p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__btn{
+            display: flex;
+            gap: 15px;
+            &__btn1{
+                background-color: orange;
+                border-color: orange;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+            &__btn2{
+                background-color: azure;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border-color: orange;
+                color: orange;
+            }
+        }
+    }
+    &__img{
+        & img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 30%;
+            margin: auto;
+        }
+    }
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        width: 40%;
+        padding: 0 20px 0 0;
+        &__sizing{
+            background-color: red;
+            width: 100px;
+            height: 10px;
+        }
+        & h1{
+            font-size: 2rem;
+        }
+        & button{
+            display: flex;
+            align-items: center;
+            background-color: azure;
+            border-color: red;
+            color: red;
+            padding: 10px;
+            border-radius: 20px;
+            & i{
+                color: red;
+                font-size: 2rem;
+            }
+        }
+    }
+    &__images{
+        display: flex;
+        gap: 100px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            padding: 30px;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 20px 0 20px 0;
+            & i{
+                background-color: bisque;
+                font-size: 3rem;
+                border-radius: 10px 0 10px 0;
+                padding: 20px;
+            }
+            & div{
+                background-color: red;
+                width: 50px;
+                height: 3px;
+            }
+        }
+    }
+}
+.nav{
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+    &__menu{
+        & span{
+            color: yellowgreen;
+        }
+        & h1{
+            font-size: 2rem;
+            padding: 30px 0;
+        }
+        & p{
+            color: turquoise;
+            font-weight: bold;
+            width: 35%;
+        }
+    }
+    &__main{
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+        gap: 50px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 8px 0 rgba(0,0,0,.3);
+            padding: 20px;
+            border-radius: 30px 30px 0 0;
+            &__img{
+                border-radius: 50%;
+            }
+            & p{
+                width: 70%;
+                padding: 30px 0;
+            }
+            &__icon{
+                color: yellow;
+                font-size: 20px;
+            }
+            & h1{
+                padding: 20px 0;
+            }
+            & span{
+                color: cadetblue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.logo{
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+    &__text{
+        & span{
+            color: yellowgreen;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        & h1{
+            padding: 20px 0;
+        }
+        & p{
+            color: cadetblue;
+            font-size: 15px;
+            font-weight: bold;
+            width: 36%;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        &__main{
+            padding-top: 50px;
+            display: flex;
+            gap: 30px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+            background-color: indigo;
+          & span{
+            color: chartreuse;
+          }
+          & h1{
+            color: white;
+          }
+            & img{
+            width: 100%;
+            height: 230px;
+            border-radius: 10px 10px 0 0;
+          } 
+          &__icon{
+            color: burlywood;
+            font-size: 2rem;
+            padding-bottom: 10px;
+          } 
+        }
+    }
+    }
+}
+.logotip{
+    width: 80%;
+    margin: auto;
+    padding: 7% 0;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        & span{
+            color: chartreuse;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        & p{
+            width: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            color: cadetblue;
+        }
+    }
+    &__email{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        &__item{
+            & input{
+                padding: 10px 150px;
+                border-radius: 5px 0 0 5px;
+            }
+            &__btn{
+                padding: 10px 20px;
+                border-radius: 0 5px 5px 0;
+                background-color: orange;
+                border-color: orange;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.footer{
+    padding: 0 10%;
+    background-color: indigo;
+    &__para{
+        color: white;
+        padding: 15px 0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    &__icon{
+        background-color: aliceblue;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        &__menu{
+            & ul{
+                display: none;
+            }
+            & i{
+                display: inline;
+                transition: color .2s ease;
+            }
+            & i:hover{
+                color: orange;
+            }
+        }
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        &__main{
+            width: 80%;
+            background-color: aqua;
+            padding: 30px;
+            border-radius: 50px 0;
+            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
+        }
+        &__images{
+            &__item{
+                background-color: aliceblue;
+                box-shadow: 0 6px 6px 0  rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    .nav{
+        &__menu{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            padding: 30px 0;
+            border-radius: 30px;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+            & p{
+                width: 80%;
+            }
+        }
+        &__main{
+            display: flex;
+            justify-content: space-between;
+            &__item{
+                background-color: aliceblue;
+                border-radius: 30px 0;
+            }
+        }
+    }
+    .logo{
+        &__text{
+            width: 80%;
+            margin: auto;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: indigo;
+            border-radius: 50px;
+            & h1{
+                color: white;
+                font-size: 2rem;
+            }
+            & p{
+                width: 80%;
+                color: azure;
+            }
+        }
+        &__menu{
+            &__main{
+                display: flex;
+                flex-direction: column;
+            &__item{    
+                width:100;
+                margin-top: 50px;
+                background-color: indigo;
+                color: azure;
+                & span{
+                    color: azure
+                };
+                &__icon{
+                    display: flex;
+                    color: azure;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        &__menu{
+            background-color: aliceblue;
+        }
+    }
+    .images{
+        display: flex;
+        flex-direction: column-reverse;
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .3);
+            padding: 5%;
+            border-radius: 10px;
+            background-color: aqua;
+            &__btn{
+                width: 100%;
+            }
+        }
+    }
+    .navbar{
+        &__main{
+            width: 100%;
+            background-color: aliceblue;
+        }
+        &__images{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            &__item{
+                background-color: indigo;
+            }
+        }
+    }
+    .nav{
+        &__menu{
+            width: 100%;
+            background-color: aliceblue;
+        }
+        &__main{
+            display: flex;
+            flex-direction: column;
+            &__item{
+                background-color: beige;
+            }
+        }
+    }
+    .logotip{
+        &__text{
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .3);
+            border-radius: 10px;
+            padding: 20px 0;
+            & p{
+                width: 80%;
+            }
+        }
+        &__email{
+            &__item{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        &__menu{
+            background-color: indigo;
+            & h1{
+                font-size: 27px;
+                color: azure;
+                & span{
+                    color: aqua;
+                    
+                }
+            }
+            & i{
+                color: azure;
+                font-size: 27px;
+            }
+        }
+    }
+    .nav{
+        &__menu{
+            & h1{
+                width: 80%;
+            }
+        }
+    }
+    .logo{
+        &__text{
+            background-color: aqua;
+            width: 100%;
+            margin: auto;
+            & h1{
+                width: 80%;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            &__main{
+                display: flex;
+                flex-direction: column;
+                &__item{
+                    background-color: chocolate;
+                }
+            }
+        }
+    }
+    .logotip{
+        &__email{
+            &__item{    
+                & input{
+                    padding: 10px 30px;
+                }
+                &__btn{
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .logotip{
+        &__email{
+            &__item{
+               & input{
+                padding: 5px 15px;
+               }
+               &__btn{
+                padding: 5px 5px;
+               }
+            }
+
+        }
+    }
+}
